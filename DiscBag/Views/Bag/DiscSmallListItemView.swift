@@ -16,10 +16,12 @@ struct DiscSmallListItemView: View {
             AsyncImage(url: URL(string: "https://i.ebayimg.com/images/g/1T8AAOSwBrRd7tdX/s-l1600.webp")) { image in
                 image
                     .resizable()
-                    .scaledToFit()
+                    .scaledToFill()
                     .frame(width: imageWidth, height: imageWidth)
             } placeholder: {
                 ProgressView()
+                    .scaledToFill()
+                    .frame(width: imageWidth, height: imageWidth)
             }
             
             HStack {

@@ -20,6 +20,8 @@ struct DiscListItemView: View {
                     .frame(width: imageWidth, height: imageWidth)
             } placeholder: {
                 ProgressView()
+                    .scaledToFill()
+                    .frame(width: imageWidth, height: imageWidth)
             }
             
             HStack {

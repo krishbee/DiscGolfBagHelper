@@ -30,7 +30,6 @@ struct AllDiscsPreviewScene: View {
                     ForEach(0..<discAmountInPreview) { disc in
                         DiscSmallListItemView(disc: user.allDiscs[disc], imageWidth: discImageSize)
                             .frame(width: discPreviewWidth, height: discPreviewHeight)
-                            .border(Color.black)
                     }
                     NavigationLink {
                         BagScreen(user: user, discsSelection: .all)

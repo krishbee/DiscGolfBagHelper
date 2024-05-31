@@ -22,7 +22,6 @@
 		EE4E3D9D2C061D3300480D13 /* Manufacturer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4E3D9C2C061D3300480D13 /* Manufacturer.swift */; };
 		EE4E3DA12C07124A00480D13 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4E3DA02C07124A00480D13 /* LoginScreen.swift */; };
 		EE4E3DA52C0714B800480D13 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4E3DA42C0714B800480D13 /* UserManager.swift */; };
-		EE4E3DA72C07178000480D13 /* LandingPage+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4E3DA62C07178000480D13 /* LandingPage+ViewModel.swift */; };
 		EE4E3DA92C07183D00480D13 /* UserManagerImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4E3DA82C07183D00480D13 /* UserManagerImplementation.swift */; };
 		EE4E3DAC2C071E1300480D13 /* TextFieldAndLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4E3DAB2C071E1300480D13 /* TextFieldAndLabel.swift */; };
 		EE4E3DAF2C073E3700480D13 /* BagScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4E3DAE2C073E3700480D13 /* BagScreen.swift */; };
@@ -39,7 +38,6 @@
 		EE4E3DC82C0896D500480D13 /* NumberFieldAndLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4E3DC72C0896D500480D13 /* NumberFieldAndLabel.swift */; };
 		EE4E3DCB2C089A7D00480D13 /* DropDownPickerAndLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4E3DCA2C089A7D00480D13 /* DropDownPickerAndLabel.swift */; };
 		EE4E3DCD2C089D3400480D13 /* Describable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4E3DCC2C089D3400480D13 /* Describable.swift */; };
-		EE4E3DCF2C09C97100480D13 /* ListGridScene+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4E3DCE2C09C97100480D13 /* ListGridScene+ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,7 +76,6 @@
 		EE4E3D9C2C061D3300480D13 /* Manufacturer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manufacturer.swift; sourceTree = "<group>"; };
 		EE4E3DA02C07124A00480D13 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		EE4E3DA42C0714B800480D13 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
-		EE4E3DA62C07178000480D13 /* LandingPage+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LandingPage+ViewModel.swift"; sourceTree = "<group>"; };
 		EE4E3DA82C07183D00480D13 /* UserManagerImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManagerImplementation.swift; sourceTree = "<group>"; };
 		EE4E3DAB2C071E1300480D13 /* TextFieldAndLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldAndLabel.swift; sourceTree = "<group>"; };
 		EE4E3DAE2C073E3700480D13 /* BagScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BagScreen.swift; sourceTree = "<group>"; };
@@ -95,7 +92,6 @@
 		EE4E3DC72C0896D500480D13 /* NumberFieldAndLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFieldAndLabel.swift; sourceTree = "<group>"; };
 		EE4E3DCA2C089A7D00480D13 /* DropDownPickerAndLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownPickerAndLabel.swift; sourceTree = "<group>"; };
 		EE4E3DCC2C089D3400480D13 /* Describable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Describable.swift; sourceTree = "<group>"; };
-		EE4E3DCE2C09C97100480D13 /* ListGridScene+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ListGridScene+ViewModel.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,13 +224,11 @@
 				EE4E3DAD2C073E2700480D13 /* Bag */,
 				EE4E3DA02C07124A00480D13 /* LoginScreen.swift */,
 				EE4E3D912C061A5E00480D13 /* LandingPage.swift */,
-				EE4E3DA62C07178000480D13 /* LandingPage+ViewModel.swift */,
 				EE4E3D692C0619C900480D13 /* ProfileScreen.swift */,
 				EE4E3DB22C07471700480D13 /* ListGridScene.swift */,
 				EE4E3DB42C0748A700480D13 /* ListGridCell.swift */,
 				EE4E3DB62C0757CF00480D13 /* UserSettingsScreen.swift */,
 				EE4E3DBE2C08674F00480D13 /* AllDiscsPreviewScene.swift */,
-				EE4E3DCE2C09C97100480D13 /* ListGridScene+ViewModel.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -411,14 +405,12 @@
 				EE4E3D962C061B4000480D13 /* User.swift in Sources */,
 				EE4E3DC42C088E6E00480D13 /* EditDiscScreen.swift in Sources */,
 				EE4E3DBB2C07608300480D13 /* DiscSmallListItemView.swift in Sources */,
-				EE4E3DA72C07178000480D13 /* LandingPage+ViewModel.swift in Sources */,
 				EE4E3DB72C0757CF00480D13 /* UserSettingsScreen.swift in Sources */,
 				EE4E3D9B2C061CB400480D13 /* DiscType.swift in Sources */,
 				EE4E3DB12C07447A00480D13 /* DiscListItemView.swift in Sources */,
 				EE4E3DBF2C08674F00480D13 /* AllDiscsPreviewScene.swift in Sources */,
 				EE4E3DA52C0714B800480D13 /* UserManager.swift in Sources */,
 				EE4E3DA92C07183D00480D13 /* UserManagerImplementation.swift in Sources */,
-				EE4E3DCF2C09C97100480D13 /* ListGridScene+ViewModel.swift in Sources */,
 				EE4E3DC62C08928200480D13 /* EditDiscScreen+ViewModel.swift in Sources */,
 				EE4E3DAC2C071E1300480D13 /* TextFieldAndLabel.swift in Sources */,
 				EE4E3DAF2C073E3700480D13 /* BagScreen.swift in Sources */,
