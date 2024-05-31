@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct DiscBagApp: App {
+    @StateObject private var userManager = UserManagerImplementation()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LandingPage()
+                .environmentObject(userManager)
         }
     }
 }

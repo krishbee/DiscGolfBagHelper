@@ -8,12 +8,38 @@
 
 /* Begin PBXBuildFile section */
 		EE4E3D682C0619C900480D13 /* DiscBagApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4E3D672C0619C900480D13 /* DiscBagApp.swift */; };
-		EE4E3D6A2C0619C900480D13 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4E3D692C0619C900480D13 /* ContentView.swift */; };
+		EE4E3D6A2C0619C900480D13 /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4E3D692C0619C900480D13 /* ProfileScreen.swift */; };
 		EE4E3D6C2C0619CA00480D13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE4E3D6B2C0619CA00480D13 /* Assets.xcassets */; };
 		EE4E3D6F2C0619CA00480D13 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE4E3D6E2C0619CA00480D13 /* Preview Assets.xcassets */; };
 		EE4E3D792C0619CA00480D13 /* DiscBagTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4E3D782C0619CA00480D13 /* DiscBagTests.swift */; };
 		EE4E3D832C0619CA00480D13 /* DiscBagUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4E3D822C0619CA00480D13 /* DiscBagUITests.swift */; };
 		EE4E3D852C0619CA00480D13 /* DiscBagUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4E3D842C0619CA00480D13 /* DiscBagUITestsLaunchTests.swift */; };
+		EE4E3D922C061A5E00480D13 /* LandingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4E3D912C061A5E00480D13 /* LandingPage.swift */; };
+		EE4E3D942C061ABC00480D13 /* UserSignedIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4E3D932C061ABC00480D13 /* UserSignedIn.swift */; };
+		EE4E3D962C061B4000480D13 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4E3D952C061B4000480D13 /* User.swift */; };
+		EE4E3D992C061C9000480D13 /* Disc.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4E3D982C061C9000480D13 /* Disc.swift */; };
+		EE4E3D9B2C061CB400480D13 /* DiscType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4E3D9A2C061CB400480D13 /* DiscType.swift */; };
+		EE4E3D9D2C061D3300480D13 /* Manufacturer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4E3D9C2C061D3300480D13 /* Manufacturer.swift */; };
+		EE4E3DA12C07124A00480D13 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4E3DA02C07124A00480D13 /* LoginScreen.swift */; };
+		EE4E3DA52C0714B800480D13 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4E3DA42C0714B800480D13 /* UserManager.swift */; };
+		EE4E3DA72C07178000480D13 /* LandingPage+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4E3DA62C07178000480D13 /* LandingPage+ViewModel.swift */; };
+		EE4E3DA92C07183D00480D13 /* UserManagerImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4E3DA82C07183D00480D13 /* UserManagerImplementation.swift */; };
+		EE4E3DAC2C071E1300480D13 /* TextFieldAndLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4E3DAB2C071E1300480D13 /* TextFieldAndLabel.swift */; };
+		EE4E3DAF2C073E3700480D13 /* BagScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4E3DAE2C073E3700480D13 /* BagScreen.swift */; };
+		EE4E3DB12C07447A00480D13 /* DiscListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4E3DB02C07447A00480D13 /* DiscListItemView.swift */; };
+		EE4E3DB32C07471700480D13 /* ListGridScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4E3DB22C07471700480D13 /* ListGridScene.swift */; };
+		EE4E3DB52C0748A700480D13 /* ListGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4E3DB42C0748A700480D13 /* ListGridCell.swift */; };
+		EE4E3DB72C0757CF00480D13 /* UserSettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4E3DB62C0757CF00480D13 /* UserSettingsScreen.swift */; };
+		EE4E3DB92C0759EC00480D13 /* FlightNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4E3DB82C0759EC00480D13 /* FlightNumbers.swift */; };
+		EE4E3DBB2C07608300480D13 /* DiscSmallListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4E3DBA2C07608300480D13 /* DiscSmallListItemView.swift */; };
+		EE4E3DBF2C08674F00480D13 /* AllDiscsPreviewScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4E3DBE2C08674F00480D13 /* AllDiscsPreviewScene.swift */; };
+		EE4E3DC12C086ED800480D13 /* DiscsSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4E3DC02C086ED800480D13 /* DiscsSelection.swift */; };
+		EE4E3DC42C088E6E00480D13 /* EditDiscScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4E3DC32C088E6E00480D13 /* EditDiscScreen.swift */; };
+		EE4E3DC62C08928200480D13 /* EditDiscScreen+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4E3DC52C08928200480D13 /* EditDiscScreen+ViewModel.swift */; };
+		EE4E3DC82C0896D500480D13 /* NumberFieldAndLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4E3DC72C0896D500480D13 /* NumberFieldAndLabel.swift */; };
+		EE4E3DCB2C089A7D00480D13 /* DropDownPickerAndLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4E3DCA2C089A7D00480D13 /* DropDownPickerAndLabel.swift */; };
+		EE4E3DCD2C089D3400480D13 /* Describable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4E3DCC2C089D3400480D13 /* Describable.swift */; };
+		EE4E3DCF2C09C97100480D13 /* ListGridScene+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4E3DCE2C09C97100480D13 /* ListGridScene+ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +62,7 @@
 /* Begin PBXFileReference section */
 		EE4E3D642C0619C900480D13 /* DiscBag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiscBag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE4E3D672C0619C900480D13 /* DiscBagApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscBagApp.swift; sourceTree = "<group>"; };
-		EE4E3D692C0619C900480D13 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EE4E3D692C0619C900480D13 /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
 		EE4E3D6B2C0619CA00480D13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE4E3D6E2C0619CA00480D13 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EE4E3D742C0619CA00480D13 /* DiscBagTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiscBagTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +70,32 @@
 		EE4E3D7E2C0619CA00480D13 /* DiscBagUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiscBagUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE4E3D822C0619CA00480D13 /* DiscBagUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscBagUITests.swift; sourceTree = "<group>"; };
 		EE4E3D842C0619CA00480D13 /* DiscBagUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscBagUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EE4E3D912C061A5E00480D13 /* LandingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPage.swift; sourceTree = "<group>"; };
+		EE4E3D932C061ABC00480D13 /* UserSignedIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSignedIn.swift; sourceTree = "<group>"; };
+		EE4E3D952C061B4000480D13 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		EE4E3D982C061C9000480D13 /* Disc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Disc.swift; sourceTree = "<group>"; };
+		EE4E3D9A2C061CB400480D13 /* DiscType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscType.swift; sourceTree = "<group>"; };
+		EE4E3D9C2C061D3300480D13 /* Manufacturer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manufacturer.swift; sourceTree = "<group>"; };
+		EE4E3DA02C07124A00480D13 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		EE4E3DA42C0714B800480D13 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		EE4E3DA62C07178000480D13 /* LandingPage+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LandingPage+ViewModel.swift"; sourceTree = "<group>"; };
+		EE4E3DA82C07183D00480D13 /* UserManagerImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManagerImplementation.swift; sourceTree = "<group>"; };
+		EE4E3DAB2C071E1300480D13 /* TextFieldAndLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldAndLabel.swift; sourceTree = "<group>"; };
+		EE4E3DAE2C073E3700480D13 /* BagScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BagScreen.swift; sourceTree = "<group>"; };
+		EE4E3DB02C07447A00480D13 /* DiscListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscListItemView.swift; sourceTree = "<group>"; };
+		EE4E3DB22C07471700480D13 /* ListGridScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListGridScene.swift; sourceTree = "<group>"; };
+		EE4E3DB42C0748A700480D13 /* ListGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListGridCell.swift; sourceTree = "<group>"; };
+		EE4E3DB62C0757CF00480D13 /* UserSettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingsScreen.swift; sourceTree = "<group>"; };
+		EE4E3DB82C0759EC00480D13 /* FlightNumbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightNumbers.swift; sourceTree = "<group>"; };
+		EE4E3DBA2C07608300480D13 /* DiscSmallListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscSmallListItemView.swift; sourceTree = "<group>"; };
+		EE4E3DBE2C08674F00480D13 /* AllDiscsPreviewScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllDiscsPreviewScene.swift; sourceTree = "<group>"; };
+		EE4E3DC02C086ED800480D13 /* DiscsSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscsSelection.swift; sourceTree = "<group>"; };
+		EE4E3DC32C088E6E00480D13 /* EditDiscScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDiscScreen.swift; sourceTree = "<group>"; };
+		EE4E3DC52C08928200480D13 /* EditDiscScreen+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EditDiscScreen+ViewModel.swift"; sourceTree = "<group>"; };
+		EE4E3DC72C0896D500480D13 /* NumberFieldAndLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFieldAndLabel.swift; sourceTree = "<group>"; };
+		EE4E3DCA2C089A7D00480D13 /* DropDownPickerAndLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownPickerAndLabel.swift; sourceTree = "<group>"; };
+		EE4E3DCC2C089D3400480D13 /* Describable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Describable.swift; sourceTree = "<group>"; };
+		EE4E3DCE2C09C97100480D13 /* ListGridScene+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ListGridScene+ViewModel.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +146,10 @@
 		EE4E3D662C0619C900480D13 /* DiscBag */ = {
 			isa = PBXGroup;
 			children = (
+				EE4E3DAA2C071D3300480D13 /* Views */,
+				EE4E3DA22C07149D00480D13 /* Manager */,
+				EE4E3D972C061C8500480D13 /* Model */,
 				EE4E3D672C0619C900480D13 /* DiscBagApp.swift */,
-				EE4E3D692C0619C900480D13 /* ContentView.swift */,
 				EE4E3D6B2C0619CA00480D13 /* Assets.xcassets */,
 				EE4E3D6D2C0619CA00480D13 /* Preview Content */,
 			);
@@ -125,6 +179,94 @@
 				EE4E3D842C0619CA00480D13 /* DiscBagUITestsLaunchTests.swift */,
 			);
 			path = DiscBagUITests;
+			sourceTree = "<group>";
+		};
+		EE4E3D972C061C8500480D13 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EE4E3D9F2C07111300480D13 /* Disc */,
+				EE4E3D9E2C07110600480D13 /* User */,
+				EE4E3DCC2C089D3400480D13 /* Describable.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EE4E3D9E2C07110600480D13 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				EE4E3D952C061B4000480D13 /* User.swift */,
+				EE4E3D932C061ABC00480D13 /* UserSignedIn.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		EE4E3D9F2C07111300480D13 /* Disc */ = {
+			isa = PBXGroup;
+			children = (
+				EE4E3D982C061C9000480D13 /* Disc.swift */,
+				EE4E3D9A2C061CB400480D13 /* DiscType.swift */,
+				EE4E3D9C2C061D3300480D13 /* Manufacturer.swift */,
+				EE4E3DB82C0759EC00480D13 /* FlightNumbers.swift */,
+			);
+			path = Disc;
+			sourceTree = "<group>";
+		};
+		EE4E3DA22C07149D00480D13 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				EE4E3DA42C0714B800480D13 /* UserManager.swift */,
+				EE4E3DA82C07183D00480D13 /* UserManagerImplementation.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		EE4E3DAA2C071D3300480D13 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EE4E3DC92C089A5200480D13 /* Reuseable */,
+				EE4E3DC22C088E6100480D13 /* Disc */,
+				EE4E3DAD2C073E2700480D13 /* Bag */,
+				EE4E3DA02C07124A00480D13 /* LoginScreen.swift */,
+				EE4E3D912C061A5E00480D13 /* LandingPage.swift */,
+				EE4E3DA62C07178000480D13 /* LandingPage+ViewModel.swift */,
+				EE4E3D692C0619C900480D13 /* ProfileScreen.swift */,
+				EE4E3DB22C07471700480D13 /* ListGridScene.swift */,
+				EE4E3DB42C0748A700480D13 /* ListGridCell.swift */,
+				EE4E3DB62C0757CF00480D13 /* UserSettingsScreen.swift */,
+				EE4E3DBE2C08674F00480D13 /* AllDiscsPreviewScene.swift */,
+				EE4E3DCE2C09C97100480D13 /* ListGridScene+ViewModel.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EE4E3DAD2C073E2700480D13 /* Bag */ = {
+			isa = PBXGroup;
+			children = (
+				EE4E3DAE2C073E3700480D13 /* BagScreen.swift */,
+				EE4E3DB02C07447A00480D13 /* DiscListItemView.swift */,
+				EE4E3DBA2C07608300480D13 /* DiscSmallListItemView.swift */,
+				EE4E3DC02C086ED800480D13 /* DiscsSelection.swift */,
+			);
+			path = Bag;
+			sourceTree = "<group>";
+		};
+		EE4E3DC22C088E6100480D13 /* Disc */ = {
+			isa = PBXGroup;
+			children = (
+				EE4E3DC32C088E6E00480D13 /* EditDiscScreen.swift */,
+				EE4E3DC52C08928200480D13 /* EditDiscScreen+ViewModel.swift */,
+			);
+			path = Disc;
+			sourceTree = "<group>";
+		};
+		EE4E3DC92C089A5200480D13 /* Reuseable */ = {
+			isa = PBXGroup;
+			children = (
+				EE4E3DC72C0896D500480D13 /* NumberFieldAndLabel.swift */,
+				EE4E3DAB2C071E1300480D13 /* TextFieldAndLabel.swift */,
+				EE4E3DCA2C089A7D00480D13 /* DropDownPickerAndLabel.swift */,
+			);
+			path = Reuseable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +399,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE4E3D6A2C0619C900480D13 /* ContentView.swift in Sources */,
+				EE4E3DC82C0896D500480D13 /* NumberFieldAndLabel.swift in Sources */,
+				EE4E3D992C061C9000480D13 /* Disc.swift in Sources */,
+				EE4E3D942C061ABC00480D13 /* UserSignedIn.swift in Sources */,
+				EE4E3DA12C07124A00480D13 /* LoginScreen.swift in Sources */,
+				EE4E3D9D2C061D3300480D13 /* Manufacturer.swift in Sources */,
+				EE4E3DB52C0748A700480D13 /* ListGridCell.swift in Sources */,
+				EE4E3D6A2C0619C900480D13 /* ProfileScreen.swift in Sources */,
+				EE4E3DCB2C089A7D00480D13 /* DropDownPickerAndLabel.swift in Sources */,
 				EE4E3D682C0619C900480D13 /* DiscBagApp.swift in Sources */,
+				EE4E3D962C061B4000480D13 /* User.swift in Sources */,
+				EE4E3DC42C088E6E00480D13 /* EditDiscScreen.swift in Sources */,
+				EE4E3DBB2C07608300480D13 /* DiscSmallListItemView.swift in Sources */,
+				EE4E3DA72C07178000480D13 /* LandingPage+ViewModel.swift in Sources */,
+				EE4E3DB72C0757CF00480D13 /* UserSettingsScreen.swift in Sources */,
+				EE4E3D9B2C061CB400480D13 /* DiscType.swift in Sources */,
+				EE4E3DB12C07447A00480D13 /* DiscListItemView.swift in Sources */,
+				EE4E3DBF2C08674F00480D13 /* AllDiscsPreviewScene.swift in Sources */,
+				EE4E3DA52C0714B800480D13 /* UserManager.swift in Sources */,
+				EE4E3DA92C07183D00480D13 /* UserManagerImplementation.swift in Sources */,
+				EE4E3DCF2C09C97100480D13 /* ListGridScene+ViewModel.swift in Sources */,
+				EE4E3DC62C08928200480D13 /* EditDiscScreen+ViewModel.swift in Sources */,
+				EE4E3DAC2C071E1300480D13 /* TextFieldAndLabel.swift in Sources */,
+				EE4E3DAF2C073E3700480D13 /* BagScreen.swift in Sources */,
+				EE4E3DB32C07471700480D13 /* ListGridScene.swift in Sources */,
+				EE4E3DC12C086ED800480D13 /* DiscsSelection.swift in Sources */,
+				EE4E3DCD2C089D3400480D13 /* Describable.swift in Sources */,
+				EE4E3D922C061A5E00480D13 /* LandingPage.swift in Sources */,
+				EE4E3DB92C0759EC00480D13 /* FlightNumbers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
