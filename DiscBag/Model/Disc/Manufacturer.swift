@@ -9,7 +9,7 @@ import Foundation
 
 enum Manufacturer: CaseIterable, Describable {
     
-    case latitude, westside, discraft, mvp, axiom, unknown
+    case unknown, latitude, westside, discraft, mvp, axiom, innova, lonestar, thoughtspace, supersonic
     
     var id: String {
         switch self {
@@ -25,13 +25,21 @@ enum Manufacturer: CaseIterable, Describable {
             "3"
         case .axiom:
             "4"
+        case .innova:
+            "5"
+        case .lonestar:
+            "6"
+        case .thoughtspace:
+            "7"
+        case .supersonic:
+            "8"
         }
     }
     
     var description: String {
         switch self {
         case .unknown:
-            "Unknown"
+            ""
         case .latitude:
             "Latitude 64"
         case .westside:
@@ -42,6 +50,14 @@ enum Manufacturer: CaseIterable, Describable {
             "MVP"
         case .axiom:
             "Axiom Discs"
+        case .innova:
+            "Innova"
+        case .lonestar:
+            "Lone Star"
+        case .thoughtspace:
+            "Thought Space Atletics"
+        case .supersonic:
+            "Super Sonic"
         }
     }
 }

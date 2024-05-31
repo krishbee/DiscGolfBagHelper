@@ -27,12 +27,8 @@ struct BagScreen: View {
         
         if !filterQuery.isEmpty {
             return result.filter {
-                $0.name.localizedCaseInsensitiveContains(filterQuery)
+                $0.name.localizedCaseInsensitiveContains(filterQuery) ||  $0.manufacturer.description.localizedCaseInsensitiveContains(filterQuery) 
             }
-        }
-        
-        result.sort {
-            $0.flightNumbers?.speed ?? 0 > $1.flightNumbers?.speed ?? 0
         }
         return result
     }
@@ -42,7 +38,8 @@ struct BagScreen: View {
     var body: some View {
         VStack(spacing: 0) {
             TextFieldAndLabel(input: $filterQuery, labelText: "Search", isSecure: false, textfieldPlaceholderText: "disc name")
-                .padding(.vertical, 24)
+                .padding(.horizontal, 24)
+                .padding(.bottom, 12)
             Group {
                 if items.count == 0 {
                     // TODO KFR: lav no results side

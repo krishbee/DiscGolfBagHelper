@@ -22,78 +22,97 @@ struct EditDiscScreen: View {
                     discType: disc.wrappedValue.discType,
                     manufacturer: disc.wrappedValue.manufacturer ,
                     flightNumbers: disc.wrappedValue.flightNumbers,
-                    inBag: false
+                    inBag: disc.wrappedValue.inBag
                 )
             )
         )
     }
     
     var body: some View {
-        VStack(spacing: 12) {
-            Text("Edit disc")
-                .fontWidth(.compressed)
-                .font(.init(.custom(.init(), size: 24)))
-                .padding(.top, 24)
-            
-            Spacer()
-            
-            TextFieldAndLabel(
-                input: $viewModel.newName,
-                labelText: "Disc name",
-                isSecure: false,
-                textfieldPlaceholderText: "\(viewModel.newName)"
-            )
-            
-            DropDownPickerAndLabel(selectedItem: $viewModel.newManifacturer, list: Manufacturer.self, labelText: "Manufacturer")
+        NavigationView {
+            VStack(spacing: 12) {
+                Text("Edit disc")
+                    .fontWidth(.compressed)
+                    .font(.init(.custom(.init(), size: 24)))
+                    .padding(.top, 24)
+                
+                Spacer()
+                
+                TextFieldAndLabel(
+                    input: $viewModel.newName,
+                    labelText: "Name",
+                    isSecure: false,
+                    textfieldPlaceholderText: "\(viewModel.newName)"
+                )
+                
+                DropDownPickerAndLabel(
+                    selectedItem: $viewModel.newManifacturer,
+                    list: Manufacturer.self,
+                    labelText: "Manufacturer"
+                )
                 .onChange(of: viewModel.newManifacturer) {
                     print(viewModel.newManifacturer.description)
                 }
-            
-            NumberFieldAndLabel(
-                input: "",
-                doubleValue: $viewModel.newSpeed,
-                labelText: "Disc speed",
-                isSecure: false,
-                textfieldPlaceholderText: "\(viewModel.newSpeed)"
-            )
-            
-            NumberFieldAndLabel(
-                input: "",
-                doubleValue: $viewModel.newGlide,
-                labelText: "Disc glide",
-                isSecure: false,
-                textfieldPlaceholderText: "\(viewModel.newGlide)"
-            )
-            
-            NumberFieldAndLabel(
-                input: "",
-                doubleValue: $viewModel.newTurn,
-                labelText: "Disc turn",
-                isSecure: false,
-                textfieldPlaceholderText: "\(viewModel.newTurn)"
-            )
-            
-            NumberFieldAndLabel(
-                input: "",
-                doubleValue: $viewModel.newFade,
-                labelText: "Disc fade",
-                isSecure: false,
-                textfieldPlaceholderText: "\(viewModel.newFade)"
-            )
-            
-            Spacer()
-            
-            Button {
-                disc = viewModel.save()
-                editDiscOverlayOpen = false
-            } label: {
-                Label(
-                    title: { Text("Save") },
-                    icon: { Image(systemName: "checkmark") }
+                
+                NumberFieldAndLabel(
+                    input: "",
+                    doubleValue: $viewModel.newSpeed,
+                    labelText: "Speed",
+                    isSecure: false,
+                    textfieldPlaceholderText: "\(viewModel.newSpeed)"
                 )
+                
+                NumberFieldAndLabel(
+                    input: "",
+                    doubleValue: $viewModel.newGlide,
+                    labelText: "Glide",
+                    isSecure: false,
+                    textfieldPlaceholderText: "\(viewModel.newGlide)"
+                )
+                
+                NumberFieldAndLabel(
+                    input: "",
+                    doubleValue: $viewModel.newTurn,
+                    labelText: "Turn",
+                    isSecure: false,
+                    textfieldPlaceholderText: "\(viewModel.newTurn)"
+                )
+                
+                NumberFieldAndLabel(
+                    input: "",
+                    doubleValue: $viewModel.newFade,
+                    labelText: "Fade",
+                    isSecure: false,
+                    textfieldPlaceholderText: "\(viewModel.newFade)"
+                )
+                
+                Spacer()
+                
+                Button {
+                    disc = viewModel.save()
+                    editDiscOverlayOpen = false
+                } label: {
+                    Label(
+                        title: { Text("Save") },
+                        icon: { Image(systemName: "checkmark") }
+                    )
+                }.toolbar {
+                    ToolbarItem(placement: .topBarTrailing) {
+                        Button {
+                            editDiscOverlayOpen = false
+                        } label: {
+                            Label(
+                                title: { Text("close") },
+                                icon: { Image(systemName: "xmark") }
+                            )
+                        }
+                    }
+                }
+                Spacer()
             }
-            Spacer()
+            .padding(.horizontal, 12)
         }
+        .navigationBarBackButtonHidden()
     }
 }
 

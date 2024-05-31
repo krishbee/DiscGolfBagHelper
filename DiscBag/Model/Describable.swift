@@ -7,6 +7,6 @@
 
 import Foundation
 
-public protocol Describable: Identifiable, Hashable {
+public protocol Describable: Identifiable, Hashable, Comparable {
     var description: String { get }
 }

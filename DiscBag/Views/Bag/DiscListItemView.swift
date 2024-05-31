@@ -30,8 +30,8 @@ struct DiscListItemView: View {
                 Spacer()
             }
             HStack {
-                Text(disc.manufacturer.description)
-                    .foregroundStyle(disc.manufacturer != .unknown ? .black : .white)
+                Text(disc.manufacturer != .unknown ? disc.manufacturer.description : "     ")
+                    .foregroundStyle(.black)
                     .font(.subheadline)
                     .fontWidth(.compressed)
                     .textCase(.uppercase)

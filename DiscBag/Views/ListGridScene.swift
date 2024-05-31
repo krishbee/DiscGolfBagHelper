@@ -14,16 +14,29 @@ struct ListGridScene: View {
     var discs: [Disc]
     @State var selectedDisc: Disc = .init(id: "", name: "", inBag: false)
     
-    private var items: [ListGridCell<Disc>] {
+    /// gør det muligt at have flere forskellige ting med i grid, defineret med EnumCase
+//    private var items: [ListGridCell<EnumCase>] {
+//        var items = discs
+//        if let index = discs.firstIndex(where: { $0.id == selectedDisc.id }) {
+//            items[index] = selectedDisc
+//        }
+//        return items.map {
+//            return ListGridCell(id: $0.id, value: $0)
+//        }
+//    }
+    
+    private var items: [Disc] {
         var items = discs
         if let index = discs.firstIndex(where: { $0.id == selectedDisc.id }) {
             items[index] = selectedDisc
         }
-        return items.map {
-            return ListGridCell(id: $0.id, value: $0)
+        items = items.sorted {
+            ($0.flightNumbers?.speed ?? 0.0) < ($1.flightNumbers?.speed ?? 0.0)
         }
         
+        return items
     }
+    
     private var layout: [GridItem] {
         let column = GridItem(.flexible(), spacing: spacing, alignment: .topLeading)
         return Array(repeating: column, count: columns)
@@ -35,12 +48,12 @@ struct ListGridScene: View {
                 LazyVGrid(columns: layout) {
                     ForEach(items) { cell in
                         Button {
-                            self.selectedDisc = cell.value
+                            self.selectedDisc = cell
                             editDiscOverlayOpen = true
                         } label: {
                             DiscListItemView(
-                                disc: cell.value,
-                                imageWidth: (geometry.size.width - (spacing * 2)) / 2
+                                disc: cell,
+                                imageWidth: (geometry.size.width - (spacing * 4)) / 2
                             )
                         }
                     }
@@ -49,6 +62,7 @@ struct ListGridScene: View {
         }
         .sheet(isPresented: $editDiscOverlayOpen){
             print(selectedDisc)
+            print(editDiscOverlayOpen)
         } content: {
             EditDiscScreen(disc: $selectedDisc, editDiscOverlayOpen: $editDiscOverlayOpen)
         }

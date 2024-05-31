@@ -1,5 +1,5 @@
 //
-//  DiscListItemView.swift
+//  DiscSmallListItemView.swift
 //  DiscBag
 //
 //  Created by Kristoffer Frank on 29/05/2024.

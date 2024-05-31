@@ -15,7 +15,7 @@ struct DropDownPickerAndLabel<T: CaseIterable & Describable>: View {
     
     init(selectedItem: Binding<T>, list: T.Type, labelText: String) {
         self._selectedItem = selectedItem
-        self.list = Array(list.allCases)
+        self.list = Array(list.allCases).sorted(by: {$0.description < $1.description || $1.description == "Unknown"})
         self.labelText = labelText
     }
     var body: some View {
@@ -23,19 +23,18 @@ struct DropDownPickerAndLabel<T: CaseIterable & Describable>: View {
             Text(labelText)
                 .font(.callout)
                 .textCase(.uppercase)
-                .frame(width: 160, height: 40)
             
+            Spacer()
             Picker("", selection: $selectedItem) {
                 ForEach(list) {
                     Text($0.description).tag($0 as T)
                 }
             }
             .pickerStyle(.automatic)
-            .frame(width: 200)
         }
     }
 }
 
 #Preview {
-    DropDownPickerAndLabel(selectedItem: .constant(Manufacturer.axiom), list: Manufacturer.self, labelText: "Manufacturer")
+    DropDownPickerAndLabel(selectedItem: .constant(Manufacturer.mvp), list: Manufacturer.self, labelText: "Manufacturer")
 }

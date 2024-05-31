@@ -18,25 +18,22 @@ struct TextFieldAndLabel: View {
             Text(labelText)
                 .font(.callout)
                 .textCase(.uppercase)
-                .frame(width: 160, height: 40)
+                .frame(width: 160, height: 40, alignment: .leading)
             Spacer()
             if isSecure {
                 SecureField(textfieldPlaceholderText, text: $input)
                     .font(.callout)
-                    .frame(maxWidth: 200, maxHeight: 40)
+                    .frame(maxWidth: 200, maxHeight: 40, alignment: .trailing)
                     .padding(.horizontal, 12)
                     .border(Color.gray)
             } else {
                 TextField(textfieldPlaceholderText, text: $input)
                     .font(.callout)
-                    .frame(maxWidth: 200, maxHeight: 40)
+                    .frame(maxWidth: 200, maxHeight: 40, alignment: .trailing)
                     .padding(.horizontal, 12)
                     .border(Color.gray)
             }
-            Spacer()
         }
-        .padding(.horizontal, 50)
-        .padding(.vertical, 10)
     }
 }
 

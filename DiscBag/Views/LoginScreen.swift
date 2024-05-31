@@ -9,14 +9,14 @@ import SwiftUI
 
 struct LoginScreen: View {
     @EnvironmentObject var userManager: UserManagerImplementation
-    @State var username: String = ""
+    @State var email: String = ""
     @State var password: String = ""
     
     var body: some View {
-        VStack(spacing: 0) {
+        VStack(spacing: 12) {
             TextFieldAndLabel(
-                input: $username,
-                labelText: "username",
+                input: $email,
+                labelText: "E-mail",
                 isSecure: false
             )
             TextFieldAndLabel(
@@ -25,23 +25,24 @@ struct LoginScreen: View {
                 isSecure: true
             )
             Button {
-                userManager.signIn(username: username, password: password)
+                userManager.signIn(username: email, password: password)
             } label: {
                 Text("Login")
+                    .font(.init(.custom(.init(), size: 18)))
             }
-            .padding(.vertical, 12)
             .padding(.horizontal, 28)
             .background(Color.blue)
             .foregroundStyle(.white)
             .cornerRadius(5)
-            .padding(.top, 20)
+            .padding(.top, 8)
         }
+        .padding(.horizontal, 50)
     }
 }
 
 #Preview {
     LoginScreen(
-        username: "",
+        email: "",
         password: ""
     )
 }

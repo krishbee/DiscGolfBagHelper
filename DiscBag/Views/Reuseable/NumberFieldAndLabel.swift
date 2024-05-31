@@ -19,10 +19,10 @@ struct NumberFieldAndLabel: View {
             Text(labelText)
                 .font(.callout)
                 .textCase(.uppercase)
-                .frame(width: 160, height: 40)
+                .frame(width: 160, height: 40, alignment: .leading)
             
             TextField(textfieldPlaceholderText ?? "", text: $input)
-                .keyboardType(.numberPad)
+                .keyboardType(.decimalPad)
                 .onChange(of: input) { oldValue, newValue in
                     let filtered = newValue.filter { "-0123456789.".contains($0) }
                     
@@ -48,10 +48,7 @@ struct NumberFieldAndLabel: View {
                 .frame(maxWidth: 200, maxHeight: 40)
                 .padding(.horizontal, 12)
                 .border(Color.gray)
-            Spacer()
         }
-        .padding(.horizontal, 50)
-        .padding(.vertical, 10)
     }
 }
 
@@ -59,7 +56,7 @@ struct NumberFieldAndLabel: View {
     NumberFieldAndLabel(
         input: "",
         doubleValue: .constant(0.0),
-        labelText: "",
+        labelText: "numberfield",
         isSecure: false,
         textfieldPlaceholderText: ""
     )
